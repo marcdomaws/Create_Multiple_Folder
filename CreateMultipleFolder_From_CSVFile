@@ -4,8 +4,7 @@ Set-Location "C:\Users\dominic\Desktop\Test"
 #Path of csv file
 $Folders = Import-Csv "C:\Users\dominic\Desktop\Test\Multiple.csv"
 
-#For Loop. Make sure that csv file has "name" at the first row, 
-then succeeding row will be the filename you want on the folders
+#For Loop. Make sure that csv file has "name" at the first row, then succeeding row will be the filename you want on the folders
 
 ForEach ($Folder in $Folders) { 
 
