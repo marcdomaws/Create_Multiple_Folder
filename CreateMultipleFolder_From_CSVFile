@@ -1,0 +1,8 @@
+Set-Location "C:\Users\dominic\Desktop\Test"
+
+$Folders = Import-Csv "C:\Users\dominic\Desktop\Test\Multiple.csv"
+ 
+ForEach ($Folder in $Folders) { 
+ 
+New-Item $Folder.Name -type directory 
+}
