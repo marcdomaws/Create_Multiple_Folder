@@ -1,0 +1,11 @@
+To get operating system info:
+         Get-WmiObject–class win32_OperatingSystem
+
+To get computer system info:
+         Get-WmiObject–class win32_ComputerSystem
+
+To get disk info:
+         Get-WmiObject–class Win32_LogicalDisk
+
+To get network info:
+         Get-WmiObject –class Win32_NetworkAdapterConfiguration
