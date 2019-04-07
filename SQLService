@@ -1,0 +1,5 @@
+get-wmiobject win32_service l where-object {$_name-like “*sql*”}
+
+or
+
+get-service sql*
