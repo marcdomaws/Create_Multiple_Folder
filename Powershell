@@ -1,0 +1,15 @@
+#Enabling powershell. Open powershell and must be run as administrator.
+
+run below command to know current execution policy
+
+Get-ExecutionPolicy
+
+You will get one of the following values:
+
+Restricted— No scripts are allowed. This is the default setting, so you will see it the first time you run the command.
+AllSigned— You can run scripts signed by a trusted developer. With this setting in place, before executing, a script will ask you to confirm that you want to run it.
+RemoteSigned— You can run your own scripts or scripts signed by a trusted developer.
+Unrestricted— You can run any script you want.
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
+Get-ExecutionPolicy
