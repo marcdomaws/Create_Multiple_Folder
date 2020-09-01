@@ -1,0 +1,9 @@
+Run powershell as administrator 
+
+expand –F:* C:\update\AMD64-all-windows8.1-kb4022717-x64_e24312d7ff6180331c022d75f09143ba71eefd80.msu C:\update\ 
+
+dism.exe /online /Add-Package /PackagePath:C:\update\Windows8.1-kb4021558-x64.cab
+
+
+To know if specific package is installed
+dism /online /get-packages | findstr KB2894856
